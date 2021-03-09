@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>My bootstrap page</title>
+</head>
+
+<body>
+    <style>
+        .row {
+            background-color: white;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <strong id="ShowAlert">Show Alert</strong>
+            </div>
+
+            <div class="col-12">
+                <strong id="HideAlert">Hide Alert</strong>
+            </div>
+
+            <div class="col-12">
+                <div class="alert alert-primary" role="alert" id="FirstAlert">
+                    Primary alert - need attention!
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="alert alert-danger" role="alert">
+
+                    <h4 class="alert-heading">Heading</h4>
+
+                    <p>Main body, this is some awesome intellectual content.</p>
+
+                    <hr />
+
+                    <p class="mb-0">Click <a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank">link</a> to get more information</p>
+                
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="LastAlert">
+                    <strong>ERROR ERROR ERROR!</strong> Please deal with all errors immediately.
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+
+    <script src="../src/bootstrap.js"></script>
+
+    <script>
+        var firstAlert = document.getElementById('FirstAlert')
+        var lastAlert = document.getElementById('LastAlert')
+        var showTrigger = document.getElementById('ShowAlert')
+        var hideTrigger = document.getElementById('HideAlert')
+
+        showTrigger.onclick = function(){
+            firstAlert.style.display = "block"
+        }
+
+        hideTrigger.onclick = function(){
+            firstAlert.style.display = "none"
+        }
+
+        lastAlert.addEventListener("closed.bs.alert", function(){
+            console.log("CLOSING")
+        })
+    </script>
+</body>
+
+</html>

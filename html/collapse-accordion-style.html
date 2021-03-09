@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>My bootstrap page</title>
+</head>
+
+<body>
+
+    <style>
+        .row {
+            background-color: white;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion" id="EpicExample">
+                    <div class="card">
+                        <div class="card-header" id="HeadingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#CollapseOne" aria-expanded="true" aria-controls="CollapseOne"> Item 1
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="CollapseOne" class="collapse show" aria-labelledby="HeadingOne"
+                            data-bs-parent="#EpicExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="HeadingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#CollapseTwo" aria-expanded="false" aria-controls="CollapseTwo"> Item 2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="CollapseTwo" class="collapse" aria-labelledby="HeadingTwo"
+                            data-bs-parent="#EpicExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="HeadingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#CollapseThree" aria-expanded="false" aria-controls="CollapseThree"> Item 3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="CollapseThree" class="collapse" aria-labelledby="HeadingThree"
+                            data-bs-parent="#EpicExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+
+    <script src="../src/bootstrap.js"></script>
+
+</body>
+
+</html>
