@@ -14,20 +14,94 @@
   <body>
 
     <style>
-        .row{
-            background-color: white;
-            margin-top: 20px;
-        }
+      .row{
+        background-color: white;
+      }
     </style>
 
     <div class="container">
-        <div class="row">
-            <div class="col-12">
+      <div class="row">
 
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+
+              </div>
             </div>
+          </nav>
         </div>
-    </div>
 
+        <nav id="EpicNavbar" class="navbar navbar-light bg-light px-3 mt-5">
+          <a href="#" class="navbar-brand">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#Batman" class="nav-link">Batman</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Superman" class="nav-link">Superman</a>
+            </li>
+            <li class="nav-item">
+              <a href="#WonderWoman" class="nav-link">Wonder woman</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Spiderman" class="nav-link">Spiderman</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div data-spy="scroll" data-target="#EpicNavbar" data-offset="0">
+                <h4 id="Batman">Batman</h4>
+                <p>Batman is a superhero who appears in American comic books published by DC Comics. Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe continuity, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and owner of Wayne Enterprises based in Gotham City. Kane, Finger, and future DC writers accompanied Batman with supporting characters, including his sidekick Robin, allies Alfred Pennyworth and James Gordon, and foes such as Catwoman, the Scarecrow, the Penguin, and his archenemy, the Joker.  </p>
+                <img src="../css/images/Batman-issue86-heder-1280x677.webp" alt="Batman" class="w-100">
+      
+                <h4 id="Superman">Superman</h4>
+                <p>Superman is a fictional superhero, who first appeared in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and first appeared in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938).[1] Superman has been adapted to a number of other media which includes radio serials, novels, movies, television shows and theatre.
+      
+                  Superman was born on the planet Krypton and was given the name Kal-El at birth. As a baby, his parents sent him to Earth in a small spaceship moments before Krypton was destroyed in a natural cataclysm. </p>
+                <img src="../css/images/superman.jpg" alt="Superman" class="w-100">
+      
+                <h4 id="WonderWoman">Wonder woman</h4>
+                <p>Wonder Woman is a fictional superheroine appearing in American comic books published by DC Comics.[3] The character is a founding member of the Justice League. The character first appeared in All Star Comics #8 in October 1941[1] with her first feature in Sensation Comics #1 in January 1942. The Wonder Woman title has been published by DC Comics almost continuously except for a brief hiatus in 1986.[4] In her homeland, the island nation of Themyscira, her official title is Princess Diana of Themyscira. When blending into the society outside of her homeland, she sometimes adopts her civilian identity Diana Prince.[5] </p>
+                <img src="../css/images/wonderwoman.jpg" alt="WonderWoman" class="w-100">
+      
+                <h4 id="Spiderman">Spiderman</h4>
+                <p>Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy #15 (Aug. 1962) in the Silver Age of Comic Books. He appears in American comic books published by Marvel Comics, as well as in a number of movies, television shows, and video game adaptations set in the Marvel Universe. In the stories, Spider-Man is the alias of Peter Parker, an orphan raised by his Aunt May and Uncle Ben in New York City after his parents Richard and Mary Parker died in a plane crash. </p>
+                <img src="../css/images/spiderman.jpg" alt="Spiderman" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
