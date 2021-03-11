@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>My bootstrap page</title>
+</head>
+
+<body>
+
+    <style>
+        .row {
+            background-color: white;
+            margin-top: 20px;
+        }
+        .with-left-margin {
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                    popover</button>
+            </div>
+            <div class="col-12 mt-5">
+                <button type="button" class="btn btn-secondary mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    Popover on top
+                  </button>
+
+                  <button type="button" class="btn btn-secondary mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    Popover on bottom
+                  </button>
+
+            </div>
+            <div class="col-12 with-left-margin">
+                <button type="button" class="btn btn-secondary mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                    Popover on left
+                  </button>
+                  <button type="button" class="btn btn-secondary mt-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                    Popover on right
+                  </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+
+    <script src="../src/bootstrap.js"></script>
+    
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>
